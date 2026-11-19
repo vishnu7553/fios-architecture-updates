@@ -1,17 +1,33 @@
-# Quartz v5
+# FiOS — Architecture Updates
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Design vault for **FiOS (FRIDAY Integrated Operating System)**: a minimal, security-first, Arch-based distro with a local AI assistant.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+**Live site:** https://vishnu7553.github.io/fios-architecture-updates/
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+The published site is built from the Obsidian notes in [`content/`](content) with [Quartz](https://quartz.jzhao.xyz/). Wikilinks, backlinks, the graph, Mermaid diagrams, and the architecture canvas are rendered there.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Layout
 
-## Sponsors
+| Path | What it is |
+|---|---|
+| `content/` | The Obsidian vault (open this folder as a vault) |
+| `quartz.config.yaml` | Site title, base URL, plugins, theme |
+| `quartz/` | Quartz source |
+| `.github/workflows/deploy-pages.yml` | Builds and deploys to GitHub Pages on push to `main` |
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## Local preview
+
+Requires Node.js 22 or newer.
+
+```bash
+npm install
+npx quartz build --serve
+```
+
+Then open http://localhost:8080.
+
+Edit notes in `content/`, push to `main`, and GitHub Pages rebuilds automatically.
+
+## Start here
+
+On the live site, start at the home page, then open **Home** for the mind map. Or read [`content/Home.md`](content/Home.md) directly.

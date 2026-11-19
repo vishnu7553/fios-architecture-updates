@@ -17,4 +17,4 @@ Start at [[Home]] for the mind map, or jump straight to:
 - [[Execution]] — how the model's actions actually run
 - [[Roadmap]] — phases and milestones
 
-The visual map is the [[FiOS Architecture]] canvas.
+The visual map is the [FiOS architecture canvas](fios-architecture.canvas).
